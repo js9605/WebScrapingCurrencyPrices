@@ -1,0 +1,9 @@
+C:\Finanse\waluty-scraper\MBankWebScraping.exe
+C:\Finanse\waluty-scraper\MBankWebScraping.dll
+C:\Finanse\waluty-scraper\MBankWebScraping.deps.json
+C:\Finanse\waluty-scraper\MBankWebScraping.runtimeconfig.json
+C:\Finanse\waluty-scraper\MBankWebScraping.pdb
+C:\Finanse\waluty-scraper\CsvHelper.dll
+C:\Finanse\waluty-scraper\HtmlAgilityPack.dll
+C:\Finanse\waluty-scraper\HtmlAgilityPack.CssSelectors.NetCore.dll
+C:\Finanse\waluty-scraper\Newtonsoft.Json.dll

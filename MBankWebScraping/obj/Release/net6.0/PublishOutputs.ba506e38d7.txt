@@ -1,0 +1,9 @@
+C:\Finanse\currencies_scraper\MBankWebScraping.exe
+C:\Finanse\currencies_scraper\MBankWebScraping.dll
+C:\Finanse\currencies_scraper\MBankWebScraping.deps.json
+C:\Finanse\currencies_scraper\MBankWebScraping.runtimeconfig.json
+C:\Finanse\currencies_scraper\MBankWebScraping.pdb
+C:\Finanse\currencies_scraper\CsvHelper.dll
+C:\Finanse\currencies_scraper\HtmlAgilityPack.dll
+C:\Finanse\currencies_scraper\HtmlAgilityPack.CssSelectors.NetCore.dll
+C:\Finanse\currencies_scraper\Newtonsoft.Json.dll

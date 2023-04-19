@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBankWebScraping", "MBankWebScraping.csproj", "{C5A16606-57EC-4C61-B2CB-795E433B9C8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5A16606-57EC-4C61-B2CB-795E433B9C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A16606-57EC-4C61-B2CB-795E433B9C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A16606-57EC-4C61-B2CB-795E433B9C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A16606-57EC-4C61-B2CB-795E433B9C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84815A1F-E173-45A0-B8C3-BB9F6EF08072}
+	EndGlobalSection
+EndGlobal
