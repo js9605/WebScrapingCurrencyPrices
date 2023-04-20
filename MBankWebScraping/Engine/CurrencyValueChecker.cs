@@ -29,9 +29,6 @@ namespace MBankWebScraping.Engine
                     {
                         CheckTresholdsSellingPrice(currencyThreshold.SellingPrice, currencyModel.purchasePrice, currencyThreshold.Name);
                         CheckTresholdsPurchasePrice(currencyThreshold.PurchasePrice, currencyModel.sellingPrice, currencyThreshold.Name);
-
-                        //Console.WriteLine($"Currency data: {currencyModel.currencyShrotcut}    Current Purchase Price: {Math.Round(currencyModel.purchasePrice, 2)}zl; SELLING AT: {Math.Round(currencyThreshold.SellingPrice, 2)}zl");
-                        //Console.WriteLine($"Currency data: {currencyModel.currencyShrotcut}    Current Selling Price: {Math.Round(currencyModel.sellingPrice, 2)}zl; PURCHASE AT: {Math.Round(currencyThreshold.PurchasePrice, 2)}zl");
                     }
                 }
             }  
@@ -50,7 +47,7 @@ namespace MBankWebScraping.Engine
             if (sellingThreshold <= purchasePrice)
             {
                 //Add information to Currencies log: currencies.csv e.g. "Selling suggested"
-                //Send Email / sms
+                var sendNotificationMail = new SendNotificationMail(sellingThreshold, purchasePrice, currencyName, $"For: {currencyName}: Threshold for selling exceeded! Threshold: {sellingThreshold}zl; Purchase Price: {purchasePrice}");
                 Console.WriteLine($"SELLING THRESHOLD EXCEEDED FOR |{currencyName}|");
 
                 return true;
@@ -58,12 +55,12 @@ namespace MBankWebScraping.Engine
             return false;
         }
 
-        public bool CheckTresholdsPurchasePrice(float sellingThreshold, float purchasePrice, string currencyName)
+        public bool CheckTresholdsPurchasePrice(float purchaseThreshold, float sellingPrice, string currencyName)
         {
-            if (sellingThreshold >= purchasePrice)
+            if (purchaseThreshold >= sellingPrice)
             {
                 //Add information to Currencies log: currencies.csv e.g. "Purchase suggested"
-                //Send Email / sms
+                var sendNotificationMail = new SendNotificationMail(purchaseThreshold, sellingPrice, currencyName, $"For: {currencyName}: Threshold for purchasing exceeded! Threshold: {purchaseThreshold}zl; Selling Price: {sellingPrice}");
                 Console.WriteLine($"PURCHASE THRESHOLD EXCEEDED FOR |{currencyName}|");
 
                 return true;
